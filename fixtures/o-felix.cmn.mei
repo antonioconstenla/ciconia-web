@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1+CMN" xml:id="cmn-document">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">O felix templum jubila</title>
+        <respStmt>
+          <persName role="transcriber">Antonio Constenla &lt;jose-antonio.constenla-martinez@hesge.ch&gt;</persName>
+        </respStmt>
+      </titleStmt>
+      <pubStmt>
+        <availability>
+          <useRestrict>CC-BY 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+      <sourceDesc>
+        <source>
+          <bibl>
+            <identifier type="siglum">GB-Ob 213</identifier>
+            <physLoc>
+              <repository>Oxford, Bodleian Library</repository>
+              <identifier type="shelfmark">MS Canonici misc. 213</identifier>
+            </physLoc>
+          </bibl>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workList>
+      <work>
+        <title type="main">O felix templum jubila</title>
+        <composer>
+          <persName role="composer">Johannes Ciconia</persName>
+        </composer>
+        <mensuration type="source" modusminor="2" tempus="3" prolatio="2" />
+        <otherChar type="source-notation">mensural.black</otherChar>
+        <otherChar type="mensur-in-source">false</otherChar>
+        <otherChar type="paratext-inscription-p22-top-center">Magister Johannes.</otherChar>
+        <otherChar type="paratext-inscription-p23-top-center">Ciconia de Leodio.</otherChar>
+        <otherChar type="paratext-pagination-p23-top-right">23</otherChar>
+      </work>
+    </workList>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv xml:id="cmn-mdiv-1">
+        <score>
+          <scoreDef meter.count="3" meter.unit="1">
+            <staffGrp>
+              <staffDef n="1" lines="5" xml:id="cmn-staffdef-1">
+                <label>Cantus 1</label>
+                <clef shape="G" line="2" />
+              </staffDef>
+              <staffDef n="2" lines="5" xml:id="cmn-staffdef-2">
+                <label>Cantus 2</label>
+                <clef shape="G" line="2" />
+              </staffDef>
+              <staffDef n="3" lines="5" xml:id="cmn-staffdef-3">
+                <label>Tenor</label>
+                <clef shape="G" line="2" dis="8" dis.place="below" />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="cmn-section-1">
+            <measure n="1" xml:id="cmn-measure-1">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m1-e1">
+                    <verse n="1">
+                      <syl>o</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m1-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v3-m1-e1" />
+                  <anchoredText func="voiceIncipit" startid="#cmn-v3-m1-e1" xml:id="cmn-anchored-v3-m1-e1">TEnor. O felix templum iubila.</anchoredText>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="2" xml:id="cmn-measure-2">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="b" oct="4" dur="2" xml:id="cmn-v1-m2-e1" />
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v1-m2-e2" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m2-e3" />
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v1-m2-e4" />
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m2-e5" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m2-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m2-e1" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m2-e2" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m2-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="3" xml:id="cmn-measure-3">
+              <staff n="1">
+                <layer n="1">
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m3-o1">
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v1-m3-e1" />
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m3-e2" />
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m3-e3" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m3-o4">
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m3-e4" />
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m3-e5" />
+                    <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m3-e6" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m3-o7">
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m3-e7" />
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m3-e8" />
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v1-m3-e9" />
+                  </tuplet>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m3-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v3-m3-e1" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m3-e2" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m3-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="4" xml:id="cmn-measure-4">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v1-m4-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">Fe</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m4-e2" />
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v1-m4-e3">
+                    <verse n="1">
+                      <syl wordpos="t">lix</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m4-e4" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m4-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m4-e1" />
+                  <note pname="d" oct="3" dur="breve" xml:id="cmn-v3-m4-e2" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v3-m4-e1" endid="#cmn-v3-m4-e2" xml:id="cmn-ligature-1" />
+            </measure>
+            <measure n="5" xml:id="cmn-measure-5">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v1-m5-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">tem</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m5-e2">
+                    <verse n="1">
+                      <syl wordpos="t">plum</syl>
+                    </verse>
+                  </note>
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v1-m5-e3">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">iu</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m5-e4">
+                    <verse n="1">
+                      <syl wordpos="m" con="d">bi</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m5-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m5-e1" />
+                  <note pname="d" oct="3" dur="breve" xml:id="cmn-v3-m5-e2" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v3-m5-e1" endid="#cmn-v3-m6-e1" xml:id="cmn-ligature-2" />
+            </measure>
+            <measure n="6" xml:id="cmn-measure-6">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m6-e1">
+                    <verse n="1">
+                      <syl wordpos="t">la</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m6-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m6-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="7" xml:id="cmn-measure-7">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m7-e1" />
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m7-e2" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m7-e3" />
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v1-m7-e4">
+                    <verse n="1">
+                      <syl>&amp;</syl>
+                    </verse>
+                  </note>
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m7-e5" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m7-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m7-e1" />
+                  <note pname="e" oct="3" dur="breve" xml:id="cmn-v3-m7-e2" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v3-m7-e1" endid="#cmn-v3-m8-e1" xml:id="cmn-ligature-3" />
+            </measure>
+            <measure n="8" xml:id="cmn-measure-8">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v1-m8-e1" />
+                  <note pname="g" oct="4" dur="1" xml:id="cmn-v1-m8-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">co</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v1-m8-e3">
+                    <verse n="1">
+                      <syl wordpos="t">hors</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m8-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m8-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="9" xml:id="cmn-measure-9">
+              <staff n="1">
+                <layer n="1">
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m9-o1">
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m9-e1">
+                      <verse n="1">
+                        <syl>tua</syl>
+                      </verse>
+                    </note>
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m9-e2" />
+                    <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m9-e3" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m9-o4">
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m9-e4">
+                      <verse n="1">
+                        <syl wordpos="i" con="d">ca</syl>
+                      </verse>
+                    </note>
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m9-e5" />
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v1-m9-e6" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v1-m9-o7">
+                    <note pname="e" oct="4" dur="1" xml:id="cmn-v1-m9-e7">
+                      <verse n="1">
+                        <syl wordpos="m" con="d">no</syl>
+                      </verse>
+                    </note>
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m9-e8">
+                      <verse n="1">
+                        <syl wordpos="m" con="d">ni</syl>
+                      </verse>
+                    </note>
+                  </tuplet>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <mRest xml:id="cmn-v2-m9-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m9-e1" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m9-e2" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m9-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="10" xml:id="cmn-measure-10">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m10-e1">
+                    <verse n="1">
+                      <syl wordpos="t">ci.</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m10-e1">
+                    <verse n="1">
+                      <syl>o</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v3-m10-e1" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v3-m10-e1" endid="#cmn-v3-m11-e1" xml:id="cmn-ligature-4" />
+            </measure>
+            <measure n="11" xml:id="cmn-measure-11">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m11-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="b" oct="4" dur="2" xml:id="cmn-v2-m11-e1" />
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v2-m11-e2" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m11-e3" />
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v2-m11-e4" />
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m11-e5" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m11-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="12" xml:id="cmn-measure-12">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m12-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m12-o1">
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m12-e1" />
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m12-e2" />
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m12-e3" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m12-o4">
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m12-e4" />
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m12-e5" />
+                    <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m12-e6" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m12-o7">
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m12-e7" />
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m12-e8" />
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m12-e9" />
+                  </tuplet>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="1" xml:id="cmn-v3-m12-e1" />
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m12-e2" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m12-e3">
+                    <accid accid="f" />
+                  </note>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="13" xml:id="cmn-measure-13">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m13-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v2-m13-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">Fe</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m13-e2" />
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v2-m13-e3">
+                    <verse n="1">
+                      <syl wordpos="t">lix</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m13-e4" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m13-e1" />
+                  <note pname="f" oct="3" dur="2" xml:id="cmn-v3-m13-e2" />
+                  <note pname="g" oct="3" dur="1" xml:id="cmn-v3-m13-e3" />
+                  <note pname="f" oct="3" dur="2" xml:id="cmn-v3-m13-e4" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="14" xml:id="cmn-measure-14">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m14-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v2-m14-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">tem</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m14-e2">
+                    <verse n="1">
+                      <syl wordpos="t">plus</syl>
+                    </verse>
+                  </note>
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v2-m14-e3">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">Iu</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m14-e4">
+                    <verse n="1">
+                      <syl wordpos="m" con="d">bi</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m14-e1" />
+                  <note pname="f" oct="3" dur="2" xml:id="cmn-v3-m14-e2" />
+                  <note pname="g" oct="3" dur="1" xml:id="cmn-v3-m14-e3" />
+                  <note pname="f" oct="3" dur="2" xml:id="cmn-v3-m14-e4" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="15" xml:id="cmn-measure-15">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m15-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m15-e1">
+                    <verse n="1">
+                      <syl wordpos="t">la</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m15-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="16" xml:id="cmn-measure-16">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m16-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m16-e1">
+                    <verse n="1">
+                      <syl>&amp;</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m16-e2" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m16-e3" />
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v2-m16-e4">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">co</syl>
+                    </verse>
+                  </note>
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m16-e5" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m16-e1" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m16-e2" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m16-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="17" xml:id="cmn-measure-17">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m17-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v2-m17-e1">
+                    <verse n="1">
+                      <syl wordpos="t">hors</syl>
+                    </verse>
+                  </note>
+                  <note pname="g" oct="4" dur="1" xml:id="cmn-v2-m17-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">tu</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v2-m17-e3">
+                    <verse n="1">
+                      <syl wordpos="t">a</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m17-e1" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m17-e2" />
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v3-m17-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="18" xml:id="cmn-measure-18">
+              <staff n="1">
+                <layer n="1">
+                  <mRest xml:id="cmn-v1-m18-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m18-o1">
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m18-e1">
+                      <verse n="1">
+                        <syl wordpos="i" con="d">ca</syl>
+                      </verse>
+                    </note>
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m18-e2" />
+                    <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m18-e3" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m18-o4">
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m18-e4">
+                      <verse n="1">
+                        <syl wordpos="m" con="d">no</syl>
+                      </verse>
+                    </note>
+                    <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m18-e5" />
+                    <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m18-e6" />
+                  </tuplet>
+                  <tuplet num="3" numbase="2" xml:id="cmn-tuplet-v2-m18-o7">
+                    <note pname="e" oct="4" dur="1" xml:id="cmn-v2-m18-e7">
+                      <verse n="1">
+                        <syl wordpos="m" con="d">ni</syl>
+                      </verse>
+                    </note>
+                    <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m18-e8" />
+                  </tuplet>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m18-e1" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m18-e2" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m18-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="19" xml:id="cmn-measure-19">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v1-m19-e1">
+                    <verse n="1">
+                      <syl>Nũc</syl>
+                    </verse>
+                  </note>
+                  <note pname="b" oct="4" dur="2" xml:id="cmn-v1-m19-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">plau</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v1-m19-e3" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m19-e4">
+                    <verse n="1">
+                      <syl wordpos="t">dat</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m19-e5">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">cor</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v2-m19-e1">
+                    <verse n="1">
+                      <syl wordpos="t">ci</syl>
+                    </verse>
+                  </note>
+                  <rest dur="1" xml:id="cmn-v2-m19-e2" />
+                  <rest dur="1" xml:id="cmn-v2-m19-e3" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v3-m19-e1" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v3-m19-e1" endid="#cmn-v3-m20-e1" xml:id="cmn-ligature-5" />
+            </measure>
+            <measure n="20" xml:id="cmn-measure-20">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v1-m20-e1">
+                    <verse n="1">
+                      <syl wordpos="t">de</syl>
+                    </verse>
+                  </note>
+                  <rest dur="1" xml:id="cmn-v1-m20-e2" />
+                  <rest dur="1" xml:id="cmn-v1-m20-e3" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v2-m20-e1">
+                    <verse n="1">
+                      <syl>Nũc</syl>
+                    </verse>
+                  </note>
+                  <note pname="b" oct="4" dur="2" xml:id="cmn-v2-m20-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">plau</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v2-m20-e3" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m20-e4">
+                    <verse n="1">
+                      <syl wordpos="t">dat</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v2-m20-e5">
+                    <verse n="1">
+                      <syl>cor</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m20-e1" />
+                </layer>
+              </staff>
+              <tie startid="#cmn-v3-m20-e1" endid="#cmn-v3-m21-e1" xml:id="cmn-tie-1" />
+            </measure>
+            <measure n="21" xml:id="cmn-measure-21">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v1-m21-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">sup</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v1-m21-e2" />
+                  <note pname="g" oct="4" dur="1" xml:id="cmn-v1-m21-e3">
+                    <verse n="1">
+                      <syl wordpos="m" con="d">pli</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v1-m21-e4" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="1" xml:id="cmn-v2-m21-e1" />
+                  <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m21-e2" />
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v2-m21-e3" />
+                  <note pname="c" oct="4" dur="2" xml:id="cmn-v2-m21-e4" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m21-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="22" xml:id="cmn-measure-22">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="b" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m22-e1">
+                    <verse n="1">
+                      <syl wordpos="t">ci</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m22-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m22-e1" />
+                </layer>
+              </staff>
+              <tie startid="#cmn-v1-m22-e1" endid="#cmn-v1-m23-e1" xml:id="cmn-tie-2" />
+              <tie startid="#cmn-v2-m22-e1" endid="#cmn-v2-m23-e1" xml:id="cmn-tie-3" />
+              <tie startid="#cmn-v3-m22-e1" endid="#cmn-v3-m23-e1" xml:id="cmn-tie-4" />
+            </measure>
+            <measure n="23" xml:id="cmn-measure-23">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="b" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m23-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m23-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m23-e1" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="24" xml:id="cmn-measure-24">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="a" oct="4" dur="1" xml:id="cmn-v1-m24-e1">
+                    <verse n="1">
+                      <syl>tu</syl>
+                    </verse>
+                  </note>
+                  <note pname="b" oct="4" dur="1" xml:id="cmn-v1-m24-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">cle</syl>
+                    </verse>
+                  </note>
+                  <note pname="c" oct="5" dur="1" xml:id="cmn-v1-m24-e3">
+                    <verse n="1">
+                      <syl wordpos="t">re</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <rest dur="2" xml:id="cmn-v2-m24-e1" />
+                  <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m24-e2">
+                    <verse n="1">
+                      <syl>tu</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v2-m24-e3">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">cle</syl>
+                    </verse>
+                  </note>
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v2-m24-e4">
+                    <verse n="1">
+                      <syl wordpos="t">re</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v2-m24-e5" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" xml:id="cmn-v3-m24-e1" />
+                  <note pname="c" oct="4" dur="1" xml:id="cmn-v3-m24-e2" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="25" xml:id="cmn-measure-25">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="b" oct="4" dur="1" xml:id="cmn-v1-m25-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">vi</syl>
+                    </verse>
+                  </note>
+                  <note pname="a" oct="4" dur="2" xml:id="cmn-v1-m25-e2" />
+                  <note pname="g" oct="4" dur="1" xml:id="cmn-v1-m25-e3">
+                    <verse n="1">
+                      <syl wordpos="t">so</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m25-e4" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="g" oct="4" dur="1" xml:id="cmn-v2-m25-e1">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">vi</syl>
+                    </verse>
+                  </note>
+                  <note pname="d" oct="4" dur="breve" xml:id="cmn-v2-m25-e2" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" xml:id="cmn-v3-m25-e1" />
+                  <note pname="d" oct="4" dur="1" xml:id="cmn-v3-m25-e2" />
+                </layer>
+              </staff>
+              <bracketSpan func="ligature" lform="solid" lstartsym="angledown" lendsym="angledown" startid="#cmn-v2-m25-e1" endid="#cmn-v2-m25-e2" xml:id="cmn-ligature-6" />
+            </measure>
+            <measure n="26" xml:id="cmn-measure-26">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m26-e1">
+                    <verse n="1">
+                      <syl>ru</syl>
+                    </verse>
+                  </note>
+                  <note pname="f" oct="4" dur="2" xml:id="cmn-v1-m26-e2" />
+                  <note pname="g" oct="4" dur="2" xml:id="cmn-v1-m26-e3" />
+                  <note pname="f" oct="4" dur="1" xml:id="cmn-v1-m26-e4">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">ti</syl>
+                    </verse>
+                  </note>
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v1-m26-e5" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="c" oct="4" dur="1" dots="1" xml:id="cmn-v2-m26-e1">
+                    <verse n="1">
+                      <syl wordpos="t">so</syl>
+                    </verse>
+                  </note>
+                  <note pname="d" oct="4" dur="2" xml:id="cmn-v2-m26-e2">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">ru</syl>
+                    </verse>
+                  </note>
+                  <note pname="e" oct="4" dur="2" xml:id="cmn-v2-m26-e3">
+                    <verse n="1">
+                      <syl wordpos="m" con="d">ti</syl>
+                    </verse>
+                  </note>
+                  <note pname="c" oct="4" dur="2" xml:id="cmn-v2-m26-e4" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m26-e1" />
+                  <note pname="b" oct="3" dur="1" xml:id="cmn-v3-m26-e2" />
+                  <note pname="a" oct="3" dur="1" xml:id="cmn-v3-m26-e3" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="27" xml:id="cmn-measure-27">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="g" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m27-e1">
+                    <verse n="1">
+                      <syl wordpos="t">la.</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m27-e1">
+                    <verse n="1">
+                      <syl wordpos="t">la.</syl>
+                    </verse>
+                  </note>
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m27-e1" />
+                </layer>
+              </staff>
+              <tie startid="#cmn-v1-m27-e1" endid="#cmn-v1-m28-e1" xml:id="cmn-tie-5" />
+              <tie startid="#cmn-v2-m27-e1" endid="#cmn-v2-m28-e1" xml:id="cmn-tie-6" />
+              <tie startid="#cmn-v3-m27-e1" endid="#cmn-v3-m28-e1" xml:id="cmn-tie-7" />
+            </measure>
+            <measure n="28" xml:id="cmn-measure-28">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="g" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m28-e1" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note pname="d" oct="4" dur="breve" dots="1" xml:id="cmn-v2-m28-e1" />
+                </layer>
+              </staff>
+              <staff n="3">
+                <layer n="1">
+                  <note pname="g" oct="3" dur="breve" dots="1" xml:id="cmn-v3-m28-e1" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

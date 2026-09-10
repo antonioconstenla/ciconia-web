@@ -1,0 +1,68 @@
+# Deploy the frozen static Ciconia Web package to GitHub Pages.
+# Static package only: no Ciconia toolkit build, no mei-scriber wheel build,
+# and no downloads of unpinned product artifacts.
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - public-v0.3
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout publication tree
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Verify required runtime toolkit is present
+        run: |
+          test -f vendor/ciconia/verovio-toolkit-wasm.js
+          test -f vendor/ciconia/verovio.js
+          test -f vendor/ciconia/BUILD_INFO.json
+          test -f vendor/mei-scribe/mei_scribe-0.0.1-py3-none-any.whl
+          test -f index.html
+
+      - name: Stage static publication artifact
+        run: |
+          mkdir -p _site
+          # Deploy same-origin runtime only; exclude VCS, harness, and packaging metadata.
+          rsync -a \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '.cursor/' \
+            --exclude '_site/' \
+            --exclude 'node_modules/' \
+            --exclude '.DS_Store' \
+            --exclude 'scripts/' \
+            ./ _site/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

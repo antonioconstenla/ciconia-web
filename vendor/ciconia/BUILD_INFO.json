@@ -1,0 +1,33 @@
+{
+  "ciconia_provisional_version": "0.3.0",
+  "ciconia_core_sha": "04a0be72727151afc08091e302f609fd51fbefda",
+  "upstream_reported_version": "6.3.0-dev",
+  "toolkit_version_string": "6.3.0-dev-04a0be7",
+  "emscripten_version": "6.0.6",
+  "emscripten_emcc_ident": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.6 (ce75e06884093bcefb86a6b8fd56a5d62a4cc245)",
+  "build_command": "./buildToolkit -c -H -w -M",
+  "build_sanitization": {
+    "identity": "CICONIA_WEB_V0_3_RC2_PUBLICATION_SANITIZATION",
+    "source_core_sha": "04a0be72727151afc08091e302f609fd51fbefda",
+    "neutral_build_root": "C:/ciconia-build/ciconia-verovio-rc2",
+    "resource_dir_macro": "/data",
+    "file_prefix_map": true,
+    "notes": "Publication rebuild from the same core commit; path-neutral RESOURCE_DIR and file-prefix-map; no musical/feature changes. RC1 toolkit bytes remain historical evidence and are not this artifact."
+  },
+  "status": "PUBLICATION SANITIZED BUILD",
+  "rc_identity": "CICONIA_WEB_V0_3_RC2_PUBLICATION_SANITIZATION",
+  "artifacts": {
+    "verovio-toolkit-wasm.js": {
+      "size": 7214563,
+      "sha256": "DC3156F228870E4EE2AC6EDBCD1D1384D7106DE8D89374FF78D0B5990C8276F9"
+    },
+    "verovio.js": {
+      "size": 7200551,
+      "sha256": "3632DC196013F55491D82EF91247FFC12A7627717C6F3928690158A8C026B166"
+    },
+    "verovio-toolkit-wasm.js.gz": {
+      "size": 2322662,
+      "sha256": "E1D83BFE3D6E97DA4FC2C687EE67358F86DD624E701A0994734FE4E5A9FC0A8E"
+    }
+  }
+}

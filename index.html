@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ciconia</title>
+    <link rel="stylesheet" href="css/viewer.css" />
+  </head>
+  <body data-app-state="HOME">
+    <header class="top">
+      <div class="brand">
+        <h1>Ciconia</h1>
+        <p class="lede">Open an existing MEI score, or convert MuseScore MEI Basic.</p>
+      </div>
+      <details class="about">
+        <summary>About / technical information</summary>
+        <p id="provenance" class="provenance">Loading Ciconia build provenance…</p>
+        <p>mei-scribe 0.0.1 · in-memory API <code>convert_mei_bytes()</code></p>
+        <p>Converter runtime: Pyodide 314.0.3, loaded only when conversion is first used.</p>
+      </details>
+    </header>
+
+    <section id="status" class="status" role="status">Ready</section>
+
+    <section id="home-panel" class="home" aria-label="Open a file">
+      <div id="dropzone" class="dropzone">
+        <p class="dropzone-title">Open an MEI file</p>
+        <p class="dropzone-copy">or drag a file here</p>
+        <label class="file-button">
+          Choose file
+          <input id="open-mei" type="file" accept=".mei,.xml" />
+        </label>
+        <p class="dropzone-note">
+          Existing MEI → View. MuseScore MEI Basic → Convert.
+          <code>.mscz</code> is not accepted.
+        </p>
+      </div>
+      <div id="pending-file" class="pending" hidden>
+        <p id="pending-kind" class="pending-kind"></p>
+        <p id="pending-name" class="pending-name"></p>
+        <p id="pending-hint" class="pending-hint"></p>
+        <div class="actions">
+          <button id="convert-basic" type="button">Convert</button>
+          <button id="view-existing" type="button">View</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="results-panel" class="results" hidden aria-label="Conversion results">
+      <h2>Conversion complete</h2>
+      <div class="result-grid">
+        <article class="result-card">
+          <h3>CMN</h3>
+          <div class="actions">
+            <button id="view-cmn" type="button">View</button>
+            <button id="download-cmn" type="button">Download</button>
+          </div>
+        </article>
+        <article class="result-card">
+          <h3>Mensural</h3>
+          <div class="actions">
+            <button id="view-mensural" type="button">View</button>
+            <button id="download-mensural" type="button">Download</button>
+          </div>
+        </article>
+      </div>
+      <div class="warnings">
+        <p id="warning-summary">0 warnings</p>
+        <ul id="warning-list"></ul>
+        <details>
+          <summary>Technical details</summary>
+          <pre id="warning-tech" class="tech"></pre>
+        </details>
+      </div>
+      <div class="actions">
+        <button id="results-new-file" type="button">New file</button>
+      </div>
+    </section>
+
+    <section id="error-panel" class="error-panel" hidden>
+      <h2>Conversion failed</h2>
+      <p id="error-message">The file could not be interpreted as supported MEI Basic.</p>
+      <details>
+        <summary>Technical details</summary>
+        <pre id="error-tech" class="tech"></pre>
+      </details>
+      <div class="actions">
+        <button id="error-new-file" type="button">Try another file</button>
+      </div>
+    </section>
+
+    <section id="viewer-chrome" class="toolbar" aria-label="Viewer controls" hidden>
+      <button id="back-results" type="button" hidden>Conversion results</button>
+      <button id="new-file" type="button" hidden>New file</button>
+      <span id="filename" class="filename">No file loaded</span>
+      <button id="prev" type="button" disabled>Previous page</button>
+      <span id="page-label">Page — / —</span>
+      <button id="next" type="button" disabled>Next page</button>
+      <button id="zoom-out" type="button" disabled>Zoom out −</button>
+      <button id="zoom-in" type="button" disabled>Zoom in +</button>
+      <button id="zoom-reset" type="button" disabled>Reset zoom</button>
+      <span id="zoom-label">Zoom —%</span>
+      <button id="save-svg" type="button" disabled>Save current SVG</button>
+      <button id="print-pdf" type="button" disabled>PDF / Print document</button>
+      <fieldset id="preview-controls" class="preview-controls" disabled>
+        <legend class="preview-controls-legend">Aperçu mensural</legend>
+        <label class="preview-control">
+          <input id="preview-lyrics" type="checkbox" checked />
+          Paroles
+        </label>
+        <label class="preview-control">
+          <input id="preview-source-systems" type="checkbox" checked />
+          Respecter les systèmes de la source
+        </label>
+      </fieldset>
+    </section>
+
+    <main id="score" class="score" aria-label="Rendered score" hidden></main>
+
+    <script src="vendor/ciconia/verovio-toolkit-wasm.js"></script>
+    <script src="js/viewer.js"></script>
+    <script type="module" src="js/app.mjs?v=03"></script>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+# Keep normative MEI fixture bytes stable for SHA pins (download/smoke identity).
+fixtures/*.mei text eol=lf

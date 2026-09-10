@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1+Mensural" xml:id="mensural-document">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">O felix templum jubila</title>
+        <respStmt>
+          <persName role="transcriber">Antonio Constenla &lt;jose-antonio.constenla-martinez@hesge.ch&gt;</persName>
+        </respStmt>
+      </titleStmt>
+      <pubStmt>
+        <availability>
+          <useRestrict>CC-BY 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+      <sourceDesc>
+        <source>
+          <bibl>
+            <identifier type="siglum">GB-Ob 213</identifier>
+            <physLoc>
+              <repository>Oxford, Bodleian Library</repository>
+              <identifier type="shelfmark">MS Canonici misc. 213</identifier>
+            </physLoc>
+          </bibl>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workList>
+      <work>
+        <title type="main">O felix templum jubila</title>
+        <composer>
+          <persName role="composer">Johannes Ciconia</persName>
+        </composer>
+        <mensuration type="source" modusminor="2" tempus="3" prolatio="2" />
+        <otherChar type="source-notation">mensural.black</otherChar>
+        <otherChar type="mensur-in-source">false</otherChar>
+        <otherChar type="paratext-inscription-p22-top-center">Magister Johannes.</otherChar>
+        <otherChar type="paratext-inscription-p23-top-center">Ciconia de Leodio.</otherChar>
+        <otherChar type="paratext-pagination-p23-top-right">23</otherChar>
+      </work>
+    </workList>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mensural-mdiv-v1">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" notationtype="mensural.black" modusminor="2" tempus="3" prolatio="2" xml:id="mensural-staffdef-v1">
+                <label>Cantus 1</label>
+                <clef shape="C" line="2" />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="mensural-section-v1-s1">
+            <staff n="1">
+              <layer n="1">
+                <note pname="a" oct="4" dur="brevis" xml:id="mensural-v1-e1">
+                  <verse n="1">
+                    <syl>o</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e2" />
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e3" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e4" />
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v1-e5" />
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e6" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e7" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e8" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e9" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e10" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e11" />
+                <note pname="g" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e12" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e13" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e14" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e15" />
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v1-e16">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">Fe</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e17" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v1-e18">
+                  <verse n="1">
+                    <syl wordpos="t">lix</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e19" />
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v1-e20">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">tem</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e21">
+                  <verse n="1">
+                    <syl wordpos="t">plum</syl>
+                  </verse>
+                </note>
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v1-e22">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">iu</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e23">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">bi</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="brevis" xml:id="mensural-v1-e24">
+                  <verse n="1">
+                    <syl wordpos="t">la</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e25" />
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e26" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e27" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v1-e28">
+                  <verse n="1">
+                    <syl>&amp;</syl>
+                  </verse>
+                </note>
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e29" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v1-e30" />
+                <note pname="g" oct="4" dur="semibrevis" xml:id="mensural-v1-e31">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">co</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v1-e32">
+                  <verse n="1">
+                    <syl wordpos="t">hors</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e33">
+                  <verse n="1">
+                    <syl>tua</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e34" />
+                <note pname="g" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e35" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e36">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">ca</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e37" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e38" />
+                <note pname="e" oct="4" dur="minima" stem.dir="up" glyph.auth="smufl" glyph.name="mensuralBlackSemibrevisOblique" xml:id="mensural-v1-e39">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">no</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v1-e40">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">ni</syl>
+                  </verse>
+                </note>
+                <note pname="d" oct="4" dur="brevis" xml:id="mensural-v1-e41">
+                  <verse n="1">
+                    <syl wordpos="t">ci.</syl>
+                  </verse>
+                </note>
+                <rest dur="longa" spaces="2" glyph.auth="smufl" glyph.name="mensuralRestLongaImperfecta" xml:id="mensural-v1-e42" />
+                <rest dur="longa" spaces="2" glyph.auth="smufl" glyph.name="mensuralRestLongaImperfecta" xml:id="mensural-v1-e43" />
+                <rest dur="longa" spaces="2" glyph.auth="smufl" glyph.name="mensuralRestLongaImperfecta" xml:id="mensural-v1-e44" />
+                <rest dur="longa" spaces="2" glyph.auth="smufl" glyph.name="mensuralRestLongaImperfecta" xml:id="mensural-v1-e45" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v1-e46">
+                  <verse n="1">
+                    <syl>Nũc</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e47">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">plau</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e48" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e49">
+                  <verse n="1">
+                    <syl wordpos="t">dat</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e50">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">cor</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v1-e51">
+                  <verse n="1">
+                    <syl wordpos="t">de</syl>
+                  </verse>
+                </note>
+                <rest dur="semibrevis" xml:id="mensural-v1-e52" />
+                <rest dur="semibrevis" xml:id="mensural-v1-e53" />
+                <custos pname="a" oct="4" xml:id="mensural-custos-v1-m21-o1" />
+              </layer>
+            </staff>
+          </section>
+          <sb xml:id="mensural-sb-v1-m21-o1" />
+          <section xml:id="mensural-section-v1-s2">
+            <staff n="1">
+              <layer n="1">
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v1-e54">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">sup</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e55" />
+                <note pname="g" oct="4" dur="semibrevis" xml:id="mensural-v1-e56">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">pli</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e57" />
+                <note pname="b" oct="4" dur="longa" xml:id="mensural-v1-e58">
+                  <verse n="1">
+                    <syl wordpos="t">ci</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v1-e59">
+                  <verse n="1">
+                    <syl>tu</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="semibrevis" xml:id="mensural-v1-e60">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">cle</syl>
+                  </verse>
+                </note>
+                <note pname="c" oct="5" dur="semibrevis" xml:id="mensural-v1-e61">
+                  <verse n="1">
+                    <syl wordpos="t">re</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="semibrevis" xml:id="mensural-v1-e62">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">vi</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e63" />
+                <note pname="g" oct="4" dur="semibrevis" xml:id="mensural-v1-e64">
+                  <verse n="1">
+                    <syl wordpos="t">so</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e65" />
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e66">
+                  <verse n="1">
+                    <syl>ru</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e67" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e68" />
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v1-e69">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">ti</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v1-e70" />
+                <note pname="g" oct="4" dur="longa" xml:id="mensural-v1-e71">
+                  <verse n="1">
+                    <syl wordpos="t">la.</syl>
+                  </verse>
+                </note>
+                <barLine form="end" xml:id="mensural-final-bar-v1" />
+              </layer>
+            </staff>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2" xml:id="mensural-mdiv-v2">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" notationtype="mensural.black" modusminor="2" tempus="3" prolatio="2" xml:id="mensural-staffdef-v2">
+                <label>Cantus 2</label>
+                <clef shape="C" line="1" />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="mensural-section-v2-s1">
+            <staff n="1">
+              <layer n="1">
+                <rest dur="3B" xml:id="mensural-v2-e1" />
+                <rest dur="3B" xml:id="mensural-v2-e2" />
+                <rest dur="3B" xml:id="mensural-v2-e3" />
+                <note pname="a" oct="4" dur="brevis" xml:id="mensural-v2-e4">
+                  <verse n="1">
+                    <syl>o</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e5" />
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e6" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e7" />
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v2-e8" />
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e9" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e10" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e11" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e12" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e13" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e14" />
+                <note pname="g" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e15" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e16" />
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e17" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e18" />
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v2-e19">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">Fe</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e20" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v2-e21">
+                  <verse n="1">
+                    <syl wordpos="t">lix</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e22" />
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v2-e23">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">tem</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e24">
+                  <verse n="1">
+                    <syl wordpos="t">plus</syl>
+                  </verse>
+                </note>
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v2-e25">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">Iu</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e26">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">bi</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="brevis" xml:id="mensural-v2-e27">
+                  <verse n="1">
+                    <syl wordpos="t">la</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e28">
+                  <verse n="1">
+                    <syl>&amp;</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e29" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e30" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v2-e31">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">co</syl>
+                  </verse>
+                </note>
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e32" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v2-e33">
+                  <verse n="1">
+                    <syl wordpos="t">hors</syl>
+                  </verse>
+                </note>
+                <note pname="g" oct="4" dur="semibrevis" xml:id="mensural-v2-e34">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">tu</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v2-e35">
+                  <verse n="1">
+                    <syl wordpos="t">a</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e36">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">ca</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e37" />
+                <note pname="g" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e38" />
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e39">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">no</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e40" />
+                <note pname="d" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e41" />
+                <note pname="e" oct="4" dur="minima" stem.dir="up" glyph.auth="smufl" glyph.name="mensuralBlackSemibrevisOblique" xml:id="mensural-v2-e42">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">ni</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="semiminima" stem.dir="up" xml:id="mensural-v2-e43" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v2-e44">
+                  <verse n="1">
+                    <syl wordpos="t">ci</syl>
+                  </verse>
+                </note>
+                <rest dur="semibrevis" xml:id="mensural-v2-e45" />
+                <rest dur="semibrevis" xml:id="mensural-v2-e46" />
+                <note pname="a" oct="4" dur="semibrevis" xml:id="mensural-v2-e47">
+                  <verse n="1">
+                    <syl>Nũc</syl>
+                  </verse>
+                </note>
+                <note pname="b" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e48">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">plau</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e49" />
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e50">
+                  <verse n="1">
+                    <syl wordpos="t">dat</syl>
+                  </verse>
+                </note>
+                <note pname="f" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e51">
+                  <verse n="1">
+                    <syl>cor</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="semibrevis" xml:id="mensural-v2-e52" />
+                <note pname="d" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e53" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v2-e54" />
+                <note pname="c" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e55" />
+                <note pname="d" oct="4" dur="longa" xml:id="mensural-v2-e56" />
+                <rest dur="minima" xml:id="mensural-v2-e57" />
+                <note pname="d" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e58">
+                  <verse n="1">
+                    <syl>tu</syl>
+                  </verse>
+                </note>
+                <custos pname="f" oct="4" xml:id="mensural-custos-v2-m24-o3" />
+              </layer>
+            </staff>
+          </section>
+          <sb xml:id="mensural-sb-v2-m24-o3" />
+          <section xml:id="mensural-section-v2-s2">
+            <staff n="1">
+              <layer n="1">
+                <note pname="f" oct="4" dur="semibrevis" xml:id="mensural-v2-e59">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">cle</syl>
+                  </verse>
+                </note>
+                <note pname="g" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e60">
+                  <verse n="1">
+                    <syl wordpos="t">re</syl>
+                  </verse>
+                </note>
+                <note pname="a" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e61" />
+                <ligature form="obliqua" xml:id="mensural-lig-v2-o62">
+                  <note pname="g" oct="4" dur="semibrevis" lig="obliqua" xml:id="mensural-v2-e62">
+                    <verse n="1">
+                      <syl wordpos="i" con="d">vi</syl>
+                    </verse>
+                  </note>
+                  <note pname="d" oct="4" dur="semibrevis" dur.quality="altera" lig="obliqua" xml:id="mensural-v2-e63" />
+                </ligature>
+                <note pname="c" oct="4" dur="semibrevis" dur.quality="perfecta" glyph.auth="smufl" glyph.name="mensuralBlackSemibrevisOblique" xml:id="mensural-v2-e64">
+                  <verse n="1">
+                    <syl wordpos="t">so</syl>
+                  </verse>
+                </note>
+                <note pname="d" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e65">
+                  <verse n="1">
+                    <syl wordpos="i" con="d">ru</syl>
+                  </verse>
+                </note>
+                <note pname="e" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e66">
+                  <verse n="1">
+                    <syl wordpos="m" con="d">ti</syl>
+                  </verse>
+                </note>
+                <note pname="c" oct="4" dur="minima" stem.dir="up" xml:id="mensural-v2-e67" />
+                <note pname="d" oct="4" dur="longa" xml:id="mensural-v2-e68">
+                  <verse n="1">
+                    <syl wordpos="t">la.</syl>
+                  </verse>
+                </note>
+                <barLine form="end" xml:id="mensural-final-bar-v2" />
+              </layer>
+            </staff>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="3" xml:id="mensural-mdiv-v3">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" notationtype="mensural.black" modusminor="2" tempus="3" prolatio="2" xml:id="mensural-staffdef-v3">
+                <label>Tenor</label>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="mensural-section-v3-s1">
+            <staff n="1">
+              <layer n="1">
+                <clefGrp xml:id="mensural-clefgrp-v3">
+                  <clef shape="C" line="4" xml:id="mensural-clef-v3-c4" />
+                  <clef shape="F" line="2" xml:id="mensural-clef-v3-f2" />
+                </clefGrp>
+                <note pname="d" oct="4" dur="brevis" xml:id="mensural-v3-e1" />
+                <anchoredText func="voiceIncipit" startid="#mensural-v3-e1" xml:id="mensural-anchored-v3-e1">TEnor. O felix templum iubila.</anchoredText>
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e2" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e3" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e4" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v3-e5" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e6" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e7" />
+                <ligature form="obliqua" xml:id="mensural-lig-v3-o8">
+                  <note pname="a" oct="3" dur="semibrevis" lig="obliqua" xml:id="mensural-v3-e8" />
+                  <note pname="d" oct="3" dur="semibrevis" dur.quality="altera" lig="obliqua" xml:id="mensural-v3-e9" />
+                </ligature>
+                <ligature form="obliqua" xml:id="mensural-lig-v3-o10">
+                  <note pname="a" oct="3" dur="semibrevis" lig="obliqua" xml:id="mensural-v3-e10" />
+                  <note pname="d" oct="3" dur="semibrevis" dur.quality="altera" lig="recta" xml:id="mensural-v3-e11" />
+                  <note pname="g" oct="3" dur="brevis" lig="recta" xml:id="mensural-v3-e12" />
+                </ligature>
+                <ligature form="recta" xml:id="mensural-lig-v3-o13">
+                  <note pname="a" oct="3" dur="semibrevis" lig="recta" xml:id="mensural-v3-e13" />
+                  <note pname="e" oct="3" dur="semibrevis" dur.quality="altera" lig="obliqua" xml:id="mensural-v3-e14" />
+                  <note pname="d" oct="3" dur="brevis" lig="obliqua" xml:id="mensural-v3-e15" />
+                </ligature>
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e16" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e17" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e18" />
+                <ligature form="obliqua" xml:id="mensural-lig-v3-o19">
+                  <note pname="d" oct="4" dur="brevis" lig="obliqua" xml:id="mensural-v3-e19" />
+                  <note pname="d" oct="3" dur="brevis" lig="obliqua" xml:id="mensural-v3-e20" />
+                </ligature>
+                <note pname="g" oct="3" dur="semibrevis" xml:id="mensural-v3-e21" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e22" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e23">
+                  <accid accid="f" />
+                </note>
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e24" />
+                <note pname="f" oct="3" dur="minima" stem.dir="up" xml:id="mensural-v3-e25" />
+                <note pname="g" oct="3" dur="semibrevis" xml:id="mensural-v3-e26" />
+                <note pname="f" oct="3" dur="minima" stem.dir="up" xml:id="mensural-v3-e27" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e28" />
+                <note pname="f" oct="3" dur="minima" stem.dir="up" xml:id="mensural-v3-e29" />
+                <note pname="g" oct="3" dur="semibrevis" xml:id="mensural-v3-e30" />
+                <note pname="f" oct="3" dur="minima" stem.dir="up" xml:id="mensural-v3-e31" />
+                <note pname="a" oct="3" dur="brevis" xml:id="mensural-v3-e32" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e33" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e34" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e35" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e36" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e37" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v3-e38" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e39" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e40" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e41" />
+                <ligature form="recta" xml:id="mensural-lig-v3-o42">
+                  <note pname="d" oct="4" dur="brevis" lig="recta" xml:id="mensural-v3-e42" />
+                  <note pname="a" oct="3" dur="longa" lig="recta" xml:id="mensural-v3-e43" />
+                </ligature>
+                <note pname="g" oct="3" dur="longa" xml:id="mensural-v3-e44" />
+                <note pname="d" oct="4" dur="brevis" dur.quality="imperfecta" glyph.auth="smufl" glyph.name="mensuralBlackSemibrevisCaudata" xml:id="mensural-v3-e45" />
+                <note pname="c" oct="4" dur="semibrevis" xml:id="mensural-v3-e46" />
+                <note pname="g" oct="3" dur="brevis" dur.quality="imperfecta" glyph.auth="smufl" glyph.name="mensuralBlackSemibrevisCaudata" xml:id="mensural-v3-e47" />
+                <note pname="d" oct="4" dur="semibrevis" xml:id="mensural-v3-e48" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e49" />
+                <note pname="b" oct="3" dur="semibrevis" xml:id="mensural-v3-e50" />
+                <note pname="a" oct="3" dur="semibrevis" xml:id="mensural-v3-e51" />
+                <note pname="g" oct="3" dur="longa" xml:id="mensural-v3-e52" />
+                <barLine form="end" xml:id="mensural-final-bar-v3" />
+              </layer>
+            </staff>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

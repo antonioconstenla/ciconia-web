@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Multi-mdiv smoke fixture</title>
+      </titleStmt>
+      <pubStmt />
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv xml:id="md1" n="1" label="Voice A">
+        <score>
+          <scoreDef meter.count="2" meter.unit="2">
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" notationtype="cmn" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="c" oct="4" dur="1" />
+                  <note pname="d" oct="4" dur="1" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv xml:id="md2" n="2" label="Voice B">
+        <score>
+          <scoreDef meter.count="2" meter.unit="2">
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.shape="C" clef.line="3" notationtype="cmn" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <pb n="2" />
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="f" oct="3" dur="1" />
+                  <note pname="g" oct="3" dur="1" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv xml:id="md3" n="3" label="Voice C">
+        <score>
+          <scoreDef meter.count="2" meter.unit="2">
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.shape="F" clef.line="4" notationtype="cmn" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <pb n="3" />
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="c" oct="3" dur="1" />
+                  <note pname="b" oct="2" dur="1" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

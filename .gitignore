@@ -1,0 +1,6 @@
+# Optional compressed toolkit copy is not referenced by the Web runtime.
+vendor/ciconia/verovio-toolkit-wasm.js.gz
+node_modules/
+.DS_Store
+_site/
+_publication_materialization/
