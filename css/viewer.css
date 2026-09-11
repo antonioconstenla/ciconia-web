@@ -140,19 +140,42 @@ button:disabled {
   max-width: 36rem;
 }
 
-.about {
-  font-size: 0.85rem;
-  color: var(--muted);
-  max-width: 22rem;
+.header-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+  max-width: 24rem;
 }
 
-.about summary {
+.about,
+.report-problem {
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 24rem;
+  text-align: left;
+}
+
+.about summary,
+.report-problem summary {
   cursor: pointer;
   color: var(--accent);
 }
 
-.about p {
+.about p,
+.report-problem p,
+.report-problem ol,
+.report-problem ul {
   margin: 0.4rem 0 0;
+}
+
+.report-problem ol,
+.report-problem ul {
+  padding-left: 1.2rem;
+}
+
+.report-problem li {
+  margin: 0.25rem 0;
 }
 
 button:focus-visible,
@@ -325,7 +348,7 @@ button.primary {
 }
 
 @media print {
-  .top, .toolbar, .status, .score, .home, .results, .error-panel {
+  .top, .toolbar, .status, .score, .home, .results, .error-panel, .report-problem {
     display: none !important;
   }
   .print-container {

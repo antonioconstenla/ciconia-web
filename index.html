@@ -12,12 +12,42 @@
         <h1>Ciconia</h1>
         <p class="lede">Open an existing MEI score, or convert MuseScore MEI Basic.</p>
       </div>
-      <details class="about">
-        <summary>About / technical information</summary>
-        <p id="provenance" class="provenance">Loading Ciconia build provenance…</p>
-        <p>mei-scribe 0.0.1 · in-memory API <code>convert_mei_bytes()</code></p>
-        <p>Converter runtime: Pyodide 314.0.3, loaded only when conversion is first used.</p>
-      </details>
+      <div class="header-meta">
+        <details class="about">
+          <summary>About / technical information</summary>
+          <p id="provenance" class="provenance">Loading Ciconia build provenance…</p>
+          <p>mei-scribe 0.0.1 · in-memory API <code>convert_mei_bytes()</code></p>
+          <p>Converter runtime: Pyodide 314.0.3, loaded only when conversion is first used.</p>
+        </details>
+        <details class="report-problem">
+          <summary>Report a problem</summary>
+          <p>
+            If something does not work as expected, please send the following
+            information to the person who asked you to use Ciconia:
+          </p>
+          <ol>
+            <li>What were you trying to do?</li>
+            <li>What happened?</li>
+            <li>What did you expect to happen?</li>
+            <li>Can you make the problem happen again?</li>
+            <li>Which browser are you using?</li>
+          </ol>
+          <p>If possible, also include:</p>
+          <ul>
+            <li>a screenshot;</li>
+            <li>the <code>.mei</code> file that caused the problem;</li>
+            <li>
+              if the problem concerns a converted result, the downloaded CMN or
+              Mensural MEI;
+            </li>
+            <li>any text shown under “Technical details”.</li>
+          </ul>
+          <p>
+            You do not need to diagnose the problem. Just describe what you were
+            doing and send the file if you can.
+          </p>
+        </details>
+      </div>
     </header>
 
     <section id="status" class="status" role="status">Ready</section>
@@ -103,14 +133,14 @@
       <button id="save-svg" type="button" disabled>Save current SVG</button>
       <button id="print-pdf" type="button" disabled>PDF / Print document</button>
       <fieldset id="preview-controls" class="preview-controls" disabled>
-        <legend class="preview-controls-legend">Aperçu mensural</legend>
+        <legend class="preview-controls-legend">Mensural preview</legend>
         <label class="preview-control">
           <input id="preview-lyrics" type="checkbox" checked />
-          Paroles
+          Lyrics
         </label>
         <label class="preview-control">
           <input id="preview-source-systems" type="checkbox" checked />
-          Respecter les systèmes de la source
+          Respect source systems
         </label>
       </fieldset>
     </section>

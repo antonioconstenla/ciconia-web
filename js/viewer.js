@@ -134,7 +134,7 @@
       `Rendered ${state.filename} — page ${state.page} / ${state.pageCount} — zoom ${state.zoomPercent}%`,
     ];
     if (state.isMensural) {
-      parts.push(preview.showLyrics ? "paroles on" : "paroles off");
+      parts.push(preview.showLyrics ? "lyrics on" : "lyrics off");
       parts.push(
         preview.respectSourceSystems ? "source systems on" : "source systems off"
       );
@@ -253,7 +253,7 @@
       `Rendered ${state.filename} — page ${state.page} / ${state.pageCount} — zoom ${state.zoomPercent}%`,
     ];
     if (state.isMensural) {
-      parts.push(preview.showLyrics ? "paroles on" : "paroles off");
+      parts.push(preview.showLyrics ? "lyrics on" : "lyrics off");
       parts.push(
         preview.respectSourceSystems ? "source systems on" : "source systems off"
       );
