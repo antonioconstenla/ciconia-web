@@ -15,7 +15,7 @@ const WANT = {
   core: "04a0be72727151afc08091e302f609fd51fbefda",
   wasm: buildInfo.artifacts["verovio-toolkit-wasm.js"].sha256,
   js: buildInfo.artifacts["verovio.js"].sha256,
-  wheel: "85f1a2dcc5fe4f133c8b25939296a24acb26033e2cbdad79d04bc63145549365",
+  wheel: "06919386619211f437174b480efae745ace017482664892c5926575688639b46",
   pyodide: "314.0.3",
   cdn: "https://cdn.jsdelivr.net/pyodide/v314.0.3/full/",
 };
@@ -79,7 +79,7 @@ assert(!/fetch\("\//.test(app), "no root-absolute fetch in app");
 assert(!/localhost|127\.0\.0\.1/.test(app), "no localhost in app");
 
 const client = fs.readFileSync(path.join(root, "js/mei-scribe-client.mjs"), "utf8");
-assert(client.includes('new URL("../mei-scribe-worker.mjs", import.meta.url)'), "relative worker URL");
+assert(client.includes('new URL("../mei-scribe-worker.mjs?v=069193866192", import.meta.url)'), "relative worker URL");
 
 const wf = fs.readFileSync(path.join(root, ".github/workflows/pages.yml"), "utf8");
 assert(/permissions:\s*\n\s*contents:\s*read\s*\n\s*pages:\s*write\s*\n\s*id-token:\s*write/m.test(wf), "minimum Pages permissions");

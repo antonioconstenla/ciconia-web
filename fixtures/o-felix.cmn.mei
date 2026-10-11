@@ -930,7 +930,7 @@
               <tie startid="#cmn-v2-m27-e1" endid="#cmn-v2-m28-e1" xml:id="cmn-tie-6" />
               <tie startid="#cmn-v3-m27-e1" endid="#cmn-v3-m28-e1" xml:id="cmn-tie-7" />
             </measure>
-            <measure n="28" xml:id="cmn-measure-28">
+            <measure n="28" right="end" xml:id="cmn-measure-28">
               <staff n="1">
                 <layer n="1">
                   <note pname="g" oct="4" dur="breve" dots="1" xml:id="cmn-v1-m28-e1" />

@@ -25,7 +25,10 @@ assert(!viewer.includes("pyodide"), "viewer.js must not mention Pyodide");
 assert(!viewer.includes("cdn.jsdelivr.net"), "viewer.js must not load a CDN");
 assert(viewer.includes("window.print()"), "viewer.js must keep window.print");
 assert(!viewer.includes("window.open"), "viewer.js must not reopen popups");
-assert(html.includes("js/app.mjs"), "index.html must load app.mjs");
+assert(html.includes("js/app.mjs?v=069193866192"), "index.html must cache-bust app.mjs");
+assert(client.includes("mei-scribe-worker.mjs?v=069193866192"), "client must cache-bust the worker URL");
+assert(worker.includes("?v=${WHEEL_SHA256.slice(0, 12)}"), "worker must cache-bust the wheel URL");
+assert(worker.includes("06919386619211f437174b480efae745ace017482664892c5926575688639b46"), "worker must pin wheel SHA");
 assert(!html.includes("pyodide.mjs"), "index.html must not load Pyodide on the main page");
 assert(worker.includes('PYODIDE_VERSION = "314.0.3"'), "worker must pin Pyodide 314.0.3");
 assert(worker.includes("from mei_scribe.api import convert_mei_bytes"), "worker must use public API");
@@ -44,7 +47,7 @@ const cmn = fs.readFileSync(path.join(root, "fixtures", "o-felix.cmn.mei"));
 const mensural = fs.readFileSync(path.join(root, "fixtures", "o-felix.mensural.mei"));
 assert(
   createHash("sha256").update(cmn).digest("hex") ===
-    "fcdd822731d46c19e82534c1460614546764d0bd078d6e009b00863e3023c0fc",
+    "9a4ec3640502585701c8d071386683163aa7bf8cda093214e3ab292b51f540b0",
   "copied CMN fixture SHA mismatch"
 );
 assert(

@@ -1,5 +1,5 @@
-mei-scriber commit: bc5e7b5cb475130c3f075558ad3e560d4ca4d7b7
+mei-scriber commit: f0d0ea6e51ccea9ddcd66f3126dcc1ec448333c9
 package: mei_scribe-0.0.1-py3-none-any.whl
-sha256: 85f1a2dcc5fe4f133c8b25939296a24acb26033e2cbdad79d04bc63145549365
+sha256: 06919386619211f437174b480efae745ace017482664892c5926575688639b46
 pyodide: 314.0.3
 build: python -m build --wheel

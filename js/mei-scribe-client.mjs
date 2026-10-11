@@ -7,7 +7,7 @@ export function createMeiScribeClient() {
   function ensureWorker() {
     if (worker) return worker;
     createdAt = performance.now();
-    worker = new Worker(new URL("../mei-scribe-worker.mjs", import.meta.url), {
+    worker = new Worker(new URL("../mei-scribe-worker.mjs?v=069193866192", import.meta.url), {
       type: "module",
     });
     worker.onmessage = (event) => {

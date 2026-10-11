@@ -1,7 +1,7 @@
 import { createMeiScribeClient } from "./mei-scribe-client.mjs";
 
 const EXPECTED_CMN_SHA =
-  "fcdd822731d46c19e82534c1460614546764d0bd078d6e009b00863e3023c0fc";
+  "9a4ec3640502585701c8d071386683163aa7bf8cda093214e3ab292b51f540b0";
 const EXPECTED_MENSURAL_SHA =
   "5ee4e6b8cbccee7e28664846ad0b6397e8ec31dcfc71575f38c97b567ba09d61";
 

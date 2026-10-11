@@ -19,7 +19,7 @@ if (!worker.includes('PYODIDE_VERSION = "314.0.3"')) throw new Error("pyodide pi
 if (!/cdn\.jsdelivr\.net\/pyodide\/v\$\{PYODIDE_VERSION\}\/full\//.test(worker)) {
   throw new Error("CDN template pin missing");
 }
-if (sha !== "85f1a2dcc5fe4f133c8b25939296a24acb26033e2cbdad79d04bc63145549365") {
+if (sha !== "06919386619211f437174b480efae745ace017482664892c5926575688639b46") {
   throw new Error("wheel sha mismatch");
 }
 console.log(

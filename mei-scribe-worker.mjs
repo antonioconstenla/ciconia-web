@@ -2,7 +2,11 @@ const PYODIDE_VERSION = "314.0.3";
 const PYODIDE_INDEX_URL = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
 const PYODIDE_MJS_URL = `${PYODIDE_INDEX_URL}pyodide.mjs`;
 const WHEEL_NAME = "mei_scribe-0.0.1-py3-none-any.whl";
-const WHEEL_URL = new URL(`./vendor/mei-scribe/${WHEEL_NAME}`, self.location.href).href;
+const WHEEL_SHA256 = "06919386619211f437174b480efae745ace017482664892c5926575688639b46";
+const WHEEL_URL = new URL(
+  `./vendor/mei-scribe/${WHEEL_NAME}?v=${WHEEL_SHA256.slice(0, 12)}`,
+  self.location.href
+).href;
 
 let pyodide = null;
 let runtimeInfo = null;

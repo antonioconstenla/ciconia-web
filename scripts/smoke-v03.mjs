@@ -50,13 +50,13 @@ assert(
   "BUILD_INFO must pin clean core commit 04a0be7"
 );
 assert(!Object.prototype.hasOwnProperty.call(buildInfo, "local_patch_identity"), "RC BUILD_INFO must not use local_patch_identity");
-assert(provenance.includes("bc5e7b5"), "wheel provenance must pin mei-scriber commit");
+assert(provenance.includes("f0d0ea6e51ccea9ddcd66f3126dcc1ec448333c9"), "wheel provenance must pin mei-scriber commit");
 
 const wheel = path.join(root, "vendor", "mei-scribe", "mei_scribe-0.0.1-py3-none-any.whl");
 const wheelSha = createHash("sha256").update(fs.readFileSync(wheel)).digest("hex");
 assert(
-  wheelSha === "85f1a2dcc5fe4f133c8b25939296a24acb26033e2cbdad79d04bc63145549365",
-  "wheel SHA mismatch vs bc5e7b5 build"
+  wheelSha === "06919386619211f437174b480efae745ace017482664892c5926575688639b46",
+  "wheel SHA mismatch vs f0d0ea6 build"
 );
 
 const mensural = fs.readFileSync(path.join(root, "fixtures", "o-felix.mensural.mei"));
